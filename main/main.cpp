@@ -11,16 +11,12 @@ int main()
   TMonom c(new double[3]{ 1, 1, 1 }, 3, 1);
   TMonom d(new double[3]{ 2, 2, 2 }, 3, 1);
 
-  TPolynomial P1, P2, P3;
-
+  TPolynomial P1, P2;
   P1 += b;
   P1 += c;
 
   P2 += a;
   P2 += d;
-
-  P3 = P1 * P2;
-
   return 0;
 }
 
