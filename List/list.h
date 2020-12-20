@@ -272,8 +272,10 @@ bool TList<T>::IsFull(void) const
     delete temp;
     return false;
   }
-  catch (...)
+  catch ()
+  {
     return true;
+  }
 }
 
 template<class T>
